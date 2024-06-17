@@ -27,7 +27,7 @@ function App() {
       return (
         <ul>
           { children.map((child, index) => {
-            return <li key={index}>
+            return <li key={index} className={'folder'}>
               <span>{ child.label }</span>
               { returnFolder(child.children) }
             </li>
